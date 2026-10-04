@@ -110,7 +110,9 @@
     .profile-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
     .profile-list li { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
     .profile-list strong { font-size: .74rem; letter-spacing: .09em; text-transform: uppercase; }
-    .profile-aside { padding: 2rem; background: var(--paper-2); }
+    .profile-portrait { width: 100%; max-width: 400px; margin: 0; padding: .45rem; justify-self: end; align-self: start; background: var(--forest); border: 1px solid rgba(23,55,47,.45); }
+    .profile-portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; background: #989898; }
+    .profile-aside { margin-top: 1.2rem; padding: 1.5rem 2rem; background: var(--paper-2); border-left: 3px solid var(--forest); }
     .profile-aside h3 { font-size: 1.7rem; }
     .profile-aside p { color: rgba(24,32,29,.72); }
     .book { background: var(--paper-2); }
@@ -161,6 +163,7 @@
       .chapter-no { font-size: 3.2rem; }
       .feature-grid, .places { grid-template-columns: 1fr; }
       .profile-split, .book-panel, .course-panel { grid-template-columns: 1fr; }
+      .profile-portrait { max-width: 420px; justify-self: center; }
       .book-cover { max-width: 340px; }
       .contact-box { grid-template-columns: 1fr; }
     }
@@ -202,6 +205,7 @@
         "jobTitle": "Facharzt für Hals-Nasen-Ohrenheilkunde und Kopf- und Halschirurgie mit Zusatzbezeichnung Plastische Operationen",
         "email": "mailto:info@prinzzuschwarzburg.de",
         "url": "https://prinzzuschwarzburg.de/",
+        "image": "https://prinzzuschwarzburg.de/assets/matthias-prinz-zu-schwarzburg-portrait-grau.webp",
         "sameAs": [
           "https://de.linkedin.com/in/prinzzuschwarzburg",
           "https://kopfzentrum-bielefeld.de/ueber/",
@@ -363,12 +367,15 @@
               <li><strong>Seit 2022</strong><span>Mitglied der Rhinoplasty Society of Europe</span></li>
               <li><strong>Seit 2025</strong><span>Präsident der Deutsch-Indonesischen Gesellschaft für Medizin e. V. (DIGM)</span></li>
             </ul>
-            <aside class="profile-aside">
-              <h3>Ärztliche Haltung</h3>
-              <p>Eine technisch mögliche Behandlung ist nicht automatisch eine sinnvolle Behandlung. Gute Medizin erklärt Alternativen, benennt Grenzen und lässt Raum für ein bewusstes Nein.</p>
-              <a href="https://orcid.org/0009-0001-9603-1762" target="_blank" rel="me noopener">ORCID-Profil öffnen</a>
-            </aside>
+            <figure class="profile-portrait">
+              <img src="assets/matthias-prinz-zu-schwarzburg-portrait-grau.webp" width="960" height="1200" loading="lazy" decoding="async" alt="Priv.-Doz. Dr. med. Matthias Prinz zu Schwarzburg">
+            </figure>
           </div>
+          <aside class="profile-aside">
+            <h3>Ärztliche Haltung</h3>
+            <p>Eine technisch mögliche Behandlung ist nicht automatisch eine sinnvolle Behandlung. Gute Medizin erklärt Alternativen, benennt Grenzen und lässt Raum für ein bewusstes Nein.</p>
+            <a href="https://orcid.org/0009-0001-9603-1762" target="_blank" rel="me noopener">ORCID-Profil öffnen</a>
+          </aside>
         </div>
       </div>
     </section>
