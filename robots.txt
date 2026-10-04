@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# STAGING: Vor Veröffentlichung durch eine freigebende robots.txt ersetzen.

@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Matthias Prinz zu Schwarzburg | HNO, Nasenchirurgie und ärztliche Orientierung</title>
+  <meta name="description" content="Priv.-Doz. Dr. med. Matthias Prinz zu Schwarzburg: HNO, Kopf- und Halschirurgie, funktionelle und ästhetische Nasenchirurgie sowie ärztliche Orientierung vor ästhetischen Gesichtsbehandlungen.">
+  <meta name="theme-color" content="#17372f">
+  <link rel="canonical" href="https://prinzzuschwarzburg.de/">
+  <style>
+    :root {
+      --paper: #f4f1e9;
+      --paper-2: #e8e3d7;
+      --ink: #18201d;
+      --forest: #17372f;
+      --forest-2: #244c40;
+      --sage: #9ca89d;
+      --gold: #b99b64;
+      --line: rgba(24,32,29,.17);
+      --white: #fffdf8;
+      --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      --serif: Georgia, "Times New Roman", serif;
+      --max: 1220px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); line-height: 1.65; }
+    a { color: inherit; }
+    img, svg { display: block; max-width: 100%; }
+    .skip { position: fixed; left: 1rem; top: -5rem; z-index: 100; padding: .8rem 1rem; background: var(--white); }
+    .skip:focus { top: 1rem; }
+    .wrap { width: min(calc(100% - 3rem), var(--max)); margin-inline: auto; }
+    .site-header { position: sticky; top: 0; z-index: 40; border-bottom: 1px solid rgba(255,255,255,.15); background: rgba(23,55,47,.94); backdrop-filter: blur(16px); color: var(--white); }
+    .nav { min-height: 102px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .brand { text-decoration: none; display: grid; grid-template-columns: 90px auto; align-items: center; gap: .9rem; line-height: 1.05; }
+    .brand-crest { width: 86px; height: 92px; object-fit: contain; filter: drop-shadow(0 2px 5px rgba(0,0,0,.18)); }
+    .brand-copy { display: flex; flex-direction: column; }
+    .brand strong { font-family: var(--serif); font-weight: 400; font-size: 1.16rem; letter-spacing: .015em; }
+    .brand-copy > span { margin-top: .35rem; font-size: .68rem; letter-spacing: .14em; text-transform: uppercase; opacity: .72; }
+    .nav-links { display: flex; align-items: center; gap: 1.3rem; font-size: .82rem; }
+    .nav-links a { text-decoration: none; opacity: .82; }
+    .nav-links a:hover, .nav-links a:focus { opacity: 1; }
+    .nav-links .nav-cta { padding: .65rem .9rem; border: 1px solid rgba(255,255,255,.45); opacity: 1; }
+    .hero { min-height: 82vh; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(380px,.95fr); background: var(--forest); color: var(--white); overflow: hidden; }
+    .hero-copy { padding: clamp(4rem, 9vw, 8rem) clamp(1.5rem, 4vw, 4.5rem) 5rem; display: flex; flex-direction: column; justify-content: center; }
+    .eyebrow { margin: 0 0 1.1rem; color: #d8c59c; text-transform: uppercase; letter-spacing: .16em; font-size: .72rem; font-weight: 650; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 400; margin-top: 0; line-height: 1.08; }
+    h1 { margin-bottom: 1.5rem; font-size: clamp(2.6rem, 4vw, 4.2rem); letter-spacing: -.045em; max-width: none; }
+    h1 .name-line, h1 .surname-line { display: block; }
+    h1 .surname-line { white-space: nowrap; }
+    .hero-lead { max-width: 42rem; margin: 0; font-size: clamp(1.02rem, 1.45vw, 1.28rem); color: rgba(255,253,248,.78); }
+    .actions { display: flex; flex-wrap: wrap; gap: .85rem; margin-top: 2.2rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .72rem 1.1rem; text-decoration: none; border: 1px solid currentColor; font-size: .85rem; letter-spacing: .025em; transition: .2s ease; }
+    .button.light { background: var(--white); border-color: var(--white); color: var(--forest); }
+    .button.ghost { color: var(--white); border-color: rgba(255,255,255,.45); }
+    .button:hover, .button:focus { transform: translateY(-2px); }
+    .hero-art { position: relative; min-height: 560px; margin: 0; background: #827861; overflow: hidden; }
+    .hero-art::after { content: none; }
+    .hero-art > img { width: 100%; height: 100%; min-height: 560px; object-fit: cover; object-position: 50% 34%; filter: grayscale(1) sepia(.08) contrast(.91) brightness(.93) blur(.6px); transform: scale(1.003); }
+    .hero-caption { position: absolute; left: 50%; bottom: 2.45rem; z-index: 2; width: calc(100% - 5.4rem); max-width: 24rem; margin: 0; padding: .45rem .65rem; transform: translateX(-50%); color: rgba(255,255,255,.82); background: rgba(16,37,31,.62); font-size: .64rem; letter-spacing: .035em; text-align: center; backdrop-filter: blur(8px); }
+    .trust { background: var(--white); border-bottom: 1px solid var(--line); }
+    .trust-grid { display: grid; grid-template-columns: repeat(4,1fr); }
+    .trust-item { padding: 1.4rem 1.1rem; border-right: 1px solid var(--line); }
+    .trust-item:last-child { border-right: 0; }
+    .trust-item strong { display: block; font-family: var(--serif); font-weight: 400; font-size: 1.06rem; }
+    .trust-item span { display: block; margin-top: .25rem; font-size: .75rem; color: rgba(24,32,29,.65); }
+    .quote { padding: clamp(5rem, 10vw, 9rem) 0; text-align: center; }
+    .quote blockquote { margin: 0 auto; max-width: 980px; font-family: var(--serif); font-size: clamp(2rem, 4.6vw, 4.7rem); line-height: 1.14; letter-spacing: -.035em; }
+    .quote p { margin: 1.5rem 0 0; color: rgba(24,32,29,.6); }
+    .chapter { border-top: 1px solid var(--line); padding: clamp(4.5rem, 8vw, 8rem) 0; }
+    .chapter-grid { display: grid; grid-template-columns: 210px minmax(0,1fr); gap: clamp(2rem, 7vw, 7rem); }
+    .chapter-no { font-family: var(--serif); font-size: clamp(3rem, 6vw, 6.5rem); line-height: 1; color: var(--gold); }
+    .chapter-label { margin-top: .7rem; text-transform: uppercase; letter-spacing: .15em; font-size: .7rem; color: rgba(24,32,29,.6); }
+    .chapter h2 { margin-bottom: 1.4rem; font-size: clamp(2.25rem, 4.2vw, 4.5rem); letter-spacing: -.035em; }
+    .intro { max-width: 800px; font-size: 1.08rem; color: rgba(24,32,29,.78); }
+    .feature-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; margin-top: 3rem; background: var(--line); border: 1px solid var(--line); }
+    .feature { padding: 1.6rem; background: var(--paper); }
+    .feature h3 { margin-bottom: .65rem; font-size: 1.45rem; }
+    .feature p { margin: 0; color: rgba(24,32,29,.68); font-size: .9rem; }
+    .places { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; margin-top: 2.7rem; }
+    .place { min-height: 280px; display: flex; flex-direction: column; justify-content: space-between; padding: 1.6rem; color: var(--white); background: var(--forest); }
+    .place:nth-child(2) { background: var(--forest-2); }
+    .place:nth-child(3) { background: #827861; }
+    .place small { text-transform: uppercase; letter-spacing: .13em; opacity: .65; }
+    .place h3 { margin: 2rem 0 .8rem; font-size: 2rem; }
+    .place p { margin: 0; color: rgba(255,255,255,.72); font-size: .9rem; }
+    .place a { margin-top: 2rem; font-size: .8rem; text-underline-offset: .25rem; }
+    .profile-split { display: grid; grid-template-columns: 1.1fr .9fr; gap: 3rem; margin-top: 3rem; }
+    .profile-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+    .profile-list li { display: grid; grid-template-columns: 9rem 1fr; gap: 1rem; padding: 1rem 0; border-bottom: 1px solid var(--line); }
+    .profile-list strong { font-size: .74rem; letter-spacing: .09em; text-transform: uppercase; }
+    .profile-aside { padding: 2rem; background: var(--paper-2); }
+    .profile-aside h3 { font-size: 1.7rem; }
+    .profile-aside p { color: rgba(24,32,29,.72); }
+    .course { color: var(--white); background: var(--forest); }
+    .course .chapter-grid { align-items: start; }
+    .course .chapter-label, .course .intro { color: rgba(255,255,255,.7); }
+    .course-panel { display: grid; grid-template-columns: 1.1fr .9fr; gap: 2rem; margin-top: 2.7rem; }
+    .course-copy { padding: 2rem; border: 1px solid rgba(255,255,255,.2); }
+    .course-copy ul { padding-left: 1.2rem; color: rgba(255,255,255,.76); }
+    .price { margin: 1.5rem 0 .4rem; font-family: var(--serif); font-size: 2.8rem; }
+    .price-note { margin: 0 0 1.4rem; font-size: .8rem; color: rgba(255,255,255,.62); }
+    .audio-card { padding: 2rem; background: var(--white); color: var(--ink); }
+    .audio-card h3 { font-size: 1.8rem; }
+    audio { width: 100%; margin-top: 1rem; }
+    .fine { font-size: .78rem; color: rgba(24,32,29,.6); }
+    .digm { background: #ded8c9; }
+    .digm-link { display: inline-flex; margin-top: 1.2rem; text-underline-offset: .3rem; }
+    .contact { padding-bottom: clamp(5rem, 10vw, 9rem); }
+    .contact-box { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 2rem; padding: clamp(2rem, 5vw, 4rem); color: var(--white); background: #827861; }
+    .contact-box h2 { margin-bottom: .7rem; font-size: clamp(2rem, 4vw, 4rem); }
+    .contact-box p { margin: 0; color: rgba(255,255,255,.78); }
+    .site-footer { padding: 2rem 0; color: rgba(255,255,255,.7); background: #10251f; font-size: .78rem; }
+    .footer-grid { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .footer-links { display: flex; flex-wrap: wrap; gap: 1rem; }
+    .footer-links a { text-underline-offset: .25rem; }
+    @media (max-width: 920px) {
+      .nav-links a:not(.nav-cta) { display: none; }
+      .hero { grid-template-columns: 1fr; }
+      .hero-copy { padding: 5rem 1.5rem 4rem; }
+      .hero-art { min-height: 470px; }
+      .trust-grid { grid-template-columns: 1fr 1fr; }
+      .trust-item:nth-child(2) { border-right: 0; }
+      .chapter-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .chapter-no { font-size: 3.2rem; }
+      .feature-grid, .places { grid-template-columns: 1fr; }
+      .profile-split, .course-panel { grid-template-columns: 1fr; }
+      .contact-box { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 560px) {
+      .wrap { width: min(calc(100% - 2rem), var(--max)); }
+      .brand { grid-template-columns: 58px auto; gap: .65rem; }
+      .brand-crest { width: 58px; height: 66px; }
+      .brand strong { font-size: .98rem; }
+      .brand-copy > span { display: none; }
+      .nav { min-height: 82px; }
+      h1 { font-size: clamp(1.75rem,8vw,2.4rem); }
+      .hero-art, .hero-art > img { min-height: 460px; }
+      .hero-caption { right: 1.7rem; bottom: 1.8rem; left: 1.7rem; width: auto; transform: none; }
+      .trust-grid { grid-template-columns: 1fr; }
+      .trust-item { border-right: 0; border-bottom: 1px solid var(--line); }
+      .profile-list li { grid-template-columns: 1fr; gap: .25rem; }
+      .footer-grid { display: grid; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .button { transition: none; } }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://prinzzuschwarzburg.de/#person",
+        "name": "Matthias Prinz zu Schwarzburg",
+        "honorificPrefix": "Priv.-Doz. Dr. med.",
+        "jobTitle": "Facharzt für Hals-Nasen-Ohrenheilkunde, Kopf- und Halschirurgie",
+        "email": "mailto:info@prinzzuschwarzburg.de",
+        "url": "https://prinzzuschwarzburg.de/",
+        "sameAs": [
+          "https://de.linkedin.com/in/prinzzuschwarzburg",
+          "https://kopfzentrum-bielefeld.de/ueber/",
+          "https://www.koe-klinik.de/koe-klinik/aerztevideos/pd-dr-med-matthias-prinz-zu-schwarzburg.html",
+          "https://orcid.org/0009-0001-9603-1762",
+          "https://www.digm.info/ziele_aufgaben"
+        ],
+        "memberOf": {
+          "@type": "Organization",
+          "name": "Deutsch-Indonesische Gesellschaft für Medizin e. V. (DIGM)",
+          "url": "https://www.digm.info/"
+        }
+      },
+      {
+        "@type": "Course",
+        "@id": "https://prinzzuschwarzburg.de/#course",
+        "name": "Botox, Filler – oder lieber nichts?",
+        "description": "Ärztlicher Selbstlernkurs zur Orientierung vor der ersten ästhetischen Gesichtsbehandlung.",
+        "provider": { "@id": "https://prinzzuschwarzburg.de/#person" },
+        "inLanguage": "de",
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.checkout-ds24.com/product/741613",
+          "price": "89.00",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#inhalt">Zum Inhalt</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Startseite Matthias Prinz zu Schwarzburg">
+        <img class="brand-crest" src="assets/schwarzburg-rudolstadt-wappen.webp" alt="" width="240" height="287">
+        <span class="brand-copy"><strong>Matthias Prinz zu Schwarzburg</strong><span>HNO · Kopf- und Halschirurgie · Plastische und ästhetische Operationen</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Hauptnavigation">
+        <a href="#nasenchirurgie">Nasenchirurgie</a>
+        <a href="#standorte">Standorte</a>
+        <a href="#profil">Profil</a>
+        <a href="#digm">DIGM</a>
+        <a class="nav-cta" href="#kurs">Kurs entdecken</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">Priv.-Doz. Dr. med. · HNO · Kopf- und Halschirurgie · Plastische und ästhetische Operationen</p>
+        <h1><span class="name-line">Matthias</span><span class="surname-line">Prinz zu Schwarzburg</span></h1>
+        <p class="hero-lead">Funktionelle und ästhetische Nasenchirurgie. Ärztliche Orientierung vor ästhetischen Gesichtsbehandlungen. Klar, sachlich, ergebnisoffen.</p>
+        <div class="actions">
+          <a class="button light" href="#standorte">Nasenoperationen &amp; Standorte</a>
+          <a class="button ghost" href="#kurs">Zum Selbstlernkurs</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/bernhardine_klassik_restauriert.webp" alt="Historisches Porträt der Fürstin Bernhardine Christiane Sophie von Schwarzburg-Rudolstadt" width="1502" height="1830" fetchpriority="high">
+        <figcaption class="hero-caption">Bernhardine Christiane Sophie, Fürstin von Schwarzburg-Rudolstadt<br><span>nach historischem Portrait der Klassik Stiftung Weimar</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="trust" aria-label="Qualifikationen">
+      <div class="wrap trust-grid">
+        <div class="trust-item"><strong>Privatdozent</strong><span>Habilitation und langjährige klinische Erfahrung</span></div>
+        <div class="trust-item"><strong>HNO &amp; Kopf-Hals-Chirurgie</strong><span>Funktion und Form gemeinsam betrachten</span></div>
+        <div class="trust-item"><strong>Europäische Fachgesellschaften</strong><span>Rhinoplasty Society of Europe · European Academy of Facial Plastic Surgery</span></div>
+        <div class="trust-item"><strong>Präsident der DIGM</strong><span>Deutsch-Indonesische Gesellschaft für Medizin e. V.</span></div>
+      </div>
+    </section>
+
+    <section class="quote wrap">
+      <blockquote>„Eine gute Entscheidung beginnt nicht mit einer Behandlung, sondern mit einer ehrlichen Abwägung.“</blockquote>
+      <p>Matthias Prinz zu Schwarzburg</p>
+    </section>
+
+    <section class="chapter" id="nasenchirurgie">
+      <div class="wrap chapter-grid">
+        <div><div class="chapter-no">01</div><div class="chapter-label">Nasenchirurgie</div></div>
+        <div>
+          <h2>Funktion bewahren. Form präzise verändern.</h2>
+          <p class="intro">Eine Nasenoperation betrifft Atmung, Proportion und Identität zugleich. Deshalb beginnt jede sinnvolle Planung mit einer fachärztlichen Untersuchung, einer realistischen Zielklärung und der Frage, ob eine Operation überhaupt der richtige Weg ist.</p>
+          <div class="feature-grid">
+            <article class="feature"><h3>Funktionell</h3><p>Beurteilung von Nasenatmung, Septum und innerer Stabilität als Grundlage der Operationsplanung.</p></article>
+            <article class="feature"><h3>Ästhetisch</h3><p>Veränderungen sollen zum Gesicht passen und die persönliche Wiedererkennbarkeit respektieren.</p></article>
+            <article class="feature"><h3>Revision</h3><p>Voroperationen verlangen eine besonders sorgfältige Analyse von Gewebe, Funktion und realistischen Möglichkeiten.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="standorte">
+      <div class="wrap chapter-grid">
+        <div><div class="chapter-no">02</div><div class="chapter-label">Standorte &amp; Kooperation</div></div>
+        <div>
+          <h2>Operative Tätigkeit an etablierten Standorten.</h2>
+          <p class="intro">Nasenoperationen werden in Bielefeld und Düsseldorf durchgeführt. Die Kooperation mit Dr. med. Jan Balczun ergänzt den fachlichen Austausch im HNO- und ästhetisch-medizinischen Umfeld.</p>
+          <div class="places">
+            <article class="place"><div><small>Bielefeld</small><h3>Kopfzentrum Bielefeld</h3><p>Funktionelle und ästhetische Nasenchirurgie im interdisziplinären Kopfzentrum.</p></div><a href="https://kopfzentrum-bielefeld.de/ueber/" target="_blank" rel="noopener">Zum Kopfzentrum</a></article>
+            <article class="place"><div><small>Düsseldorf</small><h3>KÖ-KLINIK</h3><p>Ästhetische Nasenchirurgie an der KÖ-KLINIK in Düsseldorf.</p></div><a href="https://www.koe-klinik.de/koe-klinik/aerztevideos/pd-dr-med-matthias-prinz-zu-schwarzburg.html" target="_blank" rel="noopener">Zum Ärzteprofil</a></article>
+            <article class="place"><div><small>Bochum</small><h3>Kooperation Dr. Jan Balczun</h3><p>Ambulante funktionelle und ästhetische Nasenchirurgie.</p></div><a href="https://balczun.de/" target="_blank" rel="noopener">Zur Praxis Dr. Balczun</a></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="profil">
+      <div class="wrap chapter-grid">
+        <div><div class="chapter-no">03</div><div class="chapter-label">Ärztliches Profil</div></div>
+        <div>
+          <h2>Mehr als drei Jahrzehnte HNO-Medizin.</h2>
+          <p class="intro">Matthias Prinz zu Schwarzburg ist Facharzt für Hals-Nasen-Ohrenheilkunde sowie Kopf- und Halschirurgie mit Zusatzbezeichnung Plastische Operationen. Seine Arbeit verbindet operative Erfahrung, funktionelle Diagnostik und eine zurückhaltende ästhetische Haltung.</p>
+          <div class="profile-split">
+            <ul class="profile-list">
+              <li><strong>1990</strong><span>Approbation als Arzt</span></li>
+              <li><strong>Seit 1991</strong><span>Mitglied der Deutschen Gesellschaft für Hals-Nasen-Ohren-Heilkunde, Kopf- und Hals-Chirurgie</span></li>
+              <li><strong>1994</strong><span>Anerkennung als Facharzt für Hals-Nasen-Ohrenheilkunde</span></li>
+              <li><strong>2001</strong><span>Habilitation</span></li>
+              <li><strong>Seit 2016</strong><span>Mitglied der European Academy of Facial Plastic Surgery (EAFPS)</span></li>
+              <li><strong>Seit 2022</strong><span>Mitglied der Rhinoplasty Society of Europe</span></li>
+              <li><strong>Seit 2025</strong><span>Präsident der Deutsch-Indonesischen Gesellschaft für Medizin e. V. (DIGM)</span></li>
+            </ul>
+            <aside class="profile-aside">
+              <h3>Ärztliche Haltung</h3>
+              <p>Eine technisch mögliche Behandlung ist nicht automatisch eine sinnvolle Behandlung. Gute Medizin erklärt Alternativen, benennt Grenzen und lässt Raum für ein bewusstes Nein.</p>
+              <a href="https://orcid.org/0009-0001-9603-1762" target="_blank" rel="noopener">ORCID-Profil öffnen</a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter digm" id="digm">
+      <div class="wrap chapter-grid">
+        <div><div class="chapter-no">04</div><div class="chapter-label">Internationale Medizin</div></div>
+        <div>
+          <h2>Präsident der Deutsch-Indonesischen Gesellschaft für Medizin.</h2>
+          <p class="intro">Die Deutsch-Indonesische Gesellschaft für Medizin e. V. (DIGM) fördert den medizinischen Austausch zwischen Deutschland und Indonesien. Als Präsident unterstützt Matthias Prinz zu Schwarzburg die fachliche Zusammenarbeit, persönliche Begegnungen und gemeinsame medizinische Projekte.</p>
+          <a class="digm-link" href="https://www.digm.info/ziele_aufgaben" target="_blank" rel="noopener">Mehr über die DIGM und ihre Aufgaben</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter course" id="kurs">
+      <div class="wrap chapter-grid">
+        <div><div class="chapter-no">05</div><div class="chapter-label">Ärztlicher Selbstlernkurs</div></div>
+        <div>
+          <h2>Botox, Filler – oder lieber nichts?</h2>
+          <p class="intro">Orientierung vor der ersten ästhetischen Gesichtsbehandlung. Der Kurs hilft, Verfahren, Grenzen und typische Risiken besser einzuordnen und ein ärztliches Beratungsgespräch vorbereitet zu führen.</p>
+          <div class="course-panel">
+            <article class="course-copy">
+              <h3>Was enthalten ist</h3>
+              <ul>
+                <li>acht deutschsprachige Lektionen als Audio, Video und Lesetext</li>
+                <li>Arbeitsheft, Verfahrensvergleich und Gesprächsbogen</li>
+                <li>rund 115 Minuten Ton und Video</li>
+                <li>Botox, Filler, Laser und Nichtbehandlung als Optionen</li>
+              </ul>
+              <p class="price">89 €</p>
+              <p class="price-note">Einmalzahlung · kein Abo · digitaler Download über Digistore24</p>
+              <a class="button light" href="https://www.checkout-ds24.com/product/741613" target="_blank" rel="noopener">Kurs bei Digistore24 ansehen</a>
+            </article>
+            <aside class="audio-card">
+              <p class="eyebrow" style="color:#827861">Hörprobe</p>
+              <h3>Ein erster Eindruck</h3>
+              <p>Eine kurze Passage aus Lektion 1. Die Tonspur verwendet einen autorisierten KI-Stimmklon des Autors.</p>
+              <audio controls preload="metadata">
+                <source src="assets/Lektion_01.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt die Audiowiedergabe nicht.
+              </audio>
+              <p class="fine">Allgemeine Information, keine individuelle ärztliche Beratung oder Behandlungsempfehlung.</p>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter contact" id="kontakt">
+      <div class="wrap contact-box">
+        <div><h2>Kontakt</h2><p>Allgemeine Anfragen zu Tätigkeit, Kooperationen oder Kurs. Keine individuelle medizinische Beratung per E-Mail.</p></div>
+        <a class="button light" href="mailto:info@prinzzuschwarzburg.de">info@prinzzuschwarzburg.de</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <span>© Matthias Prinz zu Schwarzburg</span>
+      <nav class="footer-links" aria-label="Rechtliche Hinweise">
+        <a href="impressum.html">Impressum</a>
+        <a href="impressum.html#bildnachweise">Bildnachweise</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="mailto:info@prinzzuschwarzburg.de">Kontakt</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
