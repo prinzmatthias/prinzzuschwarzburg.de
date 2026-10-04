@@ -1,6 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
 Sitemap: https://prinzzuschwarzburg.de/sitemap.xml
-
-# STAGING: Vor Veröffentlichung Disallow entfernen und noindex-Meta-Tags freigeben.
