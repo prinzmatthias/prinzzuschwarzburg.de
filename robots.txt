@@ -1,4 +1,6 @@
 User-agent: *
 Disallow: /
 
-# STAGING: Vor Veröffentlichung durch eine freigebende robots.txt ersetzen.
+Sitemap: https://prinzzuschwarzburg.de/sitemap.xml
+
+# STAGING: Vor Veröffentlichung Disallow entfernen und noindex-Meta-Tags freigeben.
